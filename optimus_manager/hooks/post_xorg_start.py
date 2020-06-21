@@ -24,9 +24,9 @@ def main():
 
         requested_mode = prev_state["requested_mode"]
 
-        do_xsetup(requested_mode)
+        #do_xsetup(requested_mode)
         config = load_config()
-        set_DPI(config)
+        #set_DPI(config)
 
         state = {
             "type": "done",

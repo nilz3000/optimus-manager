@@ -25,7 +25,7 @@ backup=('etc/optimus-manager/xorg-intel.conf'
         'etc/optimus-manager/nvidia-disable.sh'
 
         'var/lib/optimus-manager/persistent/startup_mode')
-source=("git+https://github.com/Askannz/optimus-manager.git#branch=master")
+source=("git+https://github.com/Askannz/optimus-manager.git#branch=disabled_prime")
 sha256sums=('SKIP')
 
 pkgver() {
