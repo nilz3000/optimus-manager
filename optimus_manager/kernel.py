@@ -98,7 +98,7 @@ def _nvidia_down(config):
 
 
 def _get_available_modules():
-    MODULES = ["nouveau", "bbswitch", "acpi_call", "nvidia", "nvidia_drm", "nvidia_modeset", "nvidia_uvm"]
+    MODULES = ["nouveau", "bbswitch", "acpi_call", "nvidia", "nvidia_drm", "nvidia_modeset", "nvidia_uvm", "ipmi_devintf", "ipmi_msghandler"]
     return [module for module in MODULES if checks.is_module_available(module)]
 
 def _load_nvidia_modules(config, available_modules):
@@ -145,7 +145,7 @@ def _try_load_acpi_call(available_modules):
 
 
 def _unload_nvidia_modules(available_modules):
-    _unload_modules(available_modules, ["nvidia_drm", "nvidia_modeset", "nvidia_uvm", "nvidia"])
+    _unload_modules(available_modules, ["ipmi_devintf", "nvidia_drm", "nvidia_modeset", "nvidia_uvm", "nvidia", "ipmi_msghandler"])
 
 def _unload_nouveau(available_modules):
     _unload_modules(available_modules, ["nouveau"])
