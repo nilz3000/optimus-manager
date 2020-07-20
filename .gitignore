@@ -3,4 +3,4 @@ build/
 optimus_manager.egg-info/
 package/optimus-manager/
 package/pkg/
-package/src
+package/src/
